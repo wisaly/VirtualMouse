@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyboardHook", "KeyboardHook\KeyboardHook.vcproj", "{DE601CEE-7F4A-46EC-AAE3-F106E773C39B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VMouse", "VMouse\VMouse.vcproj", "{0C10AC14-157A-4436-AB65-B2B9D1AAD78C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE601CEE-7F4A-46EC-AAE3-F106E773C39B} = {DE601CEE-7F4A-46EC-AAE3-F106E773C39B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE601CEE-7F4A-46EC-AAE3-F106E773C39B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE601CEE-7F4A-46EC-AAE3-F106E773C39B}.Debug|Win32.Build.0 = Debug|Win32
+		{DE601CEE-7F4A-46EC-AAE3-F106E773C39B}.Release|Win32.ActiveCfg = Release|Win32
+		{DE601CEE-7F4A-46EC-AAE3-F106E773C39B}.Release|Win32.Build.0 = Release|Win32
+		{0C10AC14-157A-4436-AB65-B2B9D1AAD78C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C10AC14-157A-4436-AB65-B2B9D1AAD78C}.Debug|Win32.Build.0 = Debug|Win32
+		{0C10AC14-157A-4436-AB65-B2B9D1AAD78C}.Release|Win32.ActiveCfg = Release|Win32
+		{0C10AC14-157A-4436-AB65-B2B9D1AAD78C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
