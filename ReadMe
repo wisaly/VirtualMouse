@@ -1,0 +1,35 @@
+VirtualMouse
+
+To use keyboard simulate mouse action.
+It was designed because my notebook touchpad does not work...
+
+Here is some tip of operation:
+(Sea .\VMouse\VMouse.png for more information.)
+i : move up
+k : move down
+j : move left
+l : move right
+u : move left up
+o : move right up
+n : move left down
+m : move right down
+Alt : make move slower
+Shift : make move slowest
+Ctrl : make move fastest
+space : left button
+; : right button
+h : scroll button
+y : backward button
+n : forward button
+d : pause / begin
+w : lockscreen / unlockscreen
+x : exit
+
+How to move:
+Press move buttons to move cursor, release button when you finished move.
+How to click:
+Press down the mouse button just like use mouse, press down key means press down mouse key, release key means release mouse key.
+How to scroll:
+Press down the scroll button, then use move up and move down to scroll, release key when finished scroll.
+How to drag:
+Press down the mouse button, then use move key to drad, release key when finish.
