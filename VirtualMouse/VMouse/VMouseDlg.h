@@ -31,6 +31,8 @@ protected:
 	// 锁屏模式
 	BOOL m_bLocked;
 
+	int unlockInput;
+
 	// 生成的消息映射函数
 	virtual BOOL OnInitDialog();
 	afx_msg void OnPaint();

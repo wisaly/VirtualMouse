@@ -143,19 +143,30 @@ LRESULT CVMouseDlg::OnKeyEvent( WPARAM wParam,LPARAM lParam )
 		{
 			if (GetKeyState (VK_CONTROL) < 0 && GetKeyState (VK_MENU) < 0 && GetKeyState(VK_SHIFT) < 0)
 			{
-				if (m_bLocked)
-				{
-					m_bLocked = FALSE;
-					m_trayIcon.ShowBallonText("»Ö¸´ÁËß÷~    =u=");
-				}
-				else
+				if (!m_bLocked)
 				{
 					m_bLocked = TRUE;
 					m_trayIcon.ShowBallonText("ËøÆÁÁËß÷~   OuO");
+					unlockInput = 0;
 				}
 				return 1;
 			}
 		}
+		if (m_bLocked && Key_Info->vkCode == VK_W)
+		{
+			unlockInput++;
+
+			if (unlockInput == 3)
+			{
+				m_bLocked = FALSE;
+				m_trayIcon.ShowBallonText("»Ö¸´ÁËß÷~    =u=");
+			}
+		}
+		if (m_bLocked && Key_Info->vkCode != VK_W)
+		{
+			unlockInput = 0;
+		}
+
 		if (m_bLocked)
 		{
 			m_trayIcon.ShowBallonText("ÆÁÄ»Ëø×¡ÁËß÷!    =x=");

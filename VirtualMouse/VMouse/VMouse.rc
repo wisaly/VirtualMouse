@@ -16,13 +16,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 中文(中华人民共和国) resources
+// 中文(简体，中国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
-#ifdef _WIN32
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 #pragma code_page(936)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -109,13 +107,12 @@ BEGIN
     BEGIN
         BLOCK "080403a8"
         BEGIN
-            VALUE "CompanyName", "TODO: <公司名>"
-            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "CompanyName", "maqiming"
+            VALUE "FileDescription", "virtual mouse application"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "VMouse.exe"
-            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
             VALUE "OriginalFilename", "VMouse.exe"
-            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductName", "virtual mouse"
             VALUE "ProductVersion", "1.0.0.1"
         END
     END
@@ -132,7 +129,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_VMOUSE_DIALOG, DIALOG
     BEGIN
@@ -150,7 +147,7 @@ END
 // Menu
 //
 
-IDR_MENU_TRAY MENU 
+IDR_MENU_TRAY MENU
 BEGIN
     POPUP "_POP_UP"
     BEGIN
@@ -159,7 +156,7 @@ BEGIN
     END
 END
 
-#endif    // 中文(中华人民共和国) resources
+#endif    // 中文(简体，中国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

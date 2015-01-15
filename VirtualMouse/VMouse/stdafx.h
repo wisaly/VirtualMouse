@@ -53,7 +53,11 @@
 #endif
 
 
+#ifdef _DEBUG
 #pragma comment (lib,"../Debug/KeyboardHook.lib")
+#else
+#pragma comment (lib,"../Release/KeyboardHook.lib")
+#endif
 #define DllImport __declspec(dllimport)
 
 DllImport void WINAPI InstallKbHook(HWND hWnd,UINT msg);
